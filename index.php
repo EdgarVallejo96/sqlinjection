@@ -16,9 +16,9 @@
     if(isset($_POST['submit'])){
         $user = $_POST['username'];
         $password = $_POST['password'];
-        $sqlQuery = "SELECT username, pass FROM users WHERE username='$user' AND pass='$password'";
+        $sqlQuery = "SELECT username, password FROM users WHERE username='$user' AND password='$password'";
         foreach($conn->query($sqlQuery) as $row){
-            echo $row['username'] . "<br>" . $row['pass'] . "<br>";
+            echo $row['username'] . "<br>" . $row['password'] . "<br>";
         }
     }
     /*
