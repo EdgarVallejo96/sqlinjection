@@ -25,27 +25,6 @@
         if(!$arr) exit('No rows');
         var_export($arr);
         $stmt = null;
-        /*
-        foreach($stmt -> execute() as $row){
-            echo $row['username'] . "<br>" . $row['password'] . "<br>"; 
-        }
-        */
-        /*
-        $stmt-> bindValue(1, $user, PDO::PARAM_STR);
-        $stmt-> bindValue(2, $password, PDO::PARAM_STR);
-        $stmt -> execute();
-        foreach($conn-> query($stmt) as $row){
-            echo $row['username'] . "<br>" . $row['password'] . "<br>"; 
-        }
-        */
-        /*
-        $stmt = $conn->prepare("SELECT username, password FROM users WHERE username = :username AND password = :password");
-        $stmt->execute([':username' => $user, ':password' => $password]);
-
-        foreach($conn->query($stmt) as $row){
-            echo $row['username'] . "<br>" . $row['password'] . "<br>"; 
-        }
-    */
     }
     /*
         To inject use: ' or '1'='1 
