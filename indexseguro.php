@@ -3,7 +3,7 @@
 <head>
 </head>
 <body>
-<h1>Insecure Page</h1>
+<h1>Secure Page</h1>
 <?php require("conn.php"); ?>
 <form action="" method="post">
     <label>Username</label>
