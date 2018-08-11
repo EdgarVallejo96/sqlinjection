@@ -35,3 +35,6 @@
 ?>
 </body>
 </html>
+
+http://php.net/manual/es/pdostatement.bindvalue.php
+http://php.net/manual/es/pdo.constants.php
