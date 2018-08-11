@@ -19,7 +19,9 @@
         $stmt = $conn -> prepare("SELECT username, password FROM users WHERE username = ? AND password = ?");
         $stmt-> bindValue(1, $user, PDO::PARAM_STR);
         $stmt-> bindValue(2, $password, PDO::PARAM_STR);
+        var_export($stmt);
         $stmt -> execute();
+        
        // $stmt -> fetchAll();
         $arr = $stmt->fetchAll();
         if(!$arr) exit('No rows');
